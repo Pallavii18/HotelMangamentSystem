@@ -1,0 +1,82 @@
+/* Payment.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Reduced margin */
+    font-size: 28px; /* Slightly smaller font */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Reduced width */
+    text-align: center; /* Center content */
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.value-display {
+    background-color: #f3f3f3;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced margin */
+    border-radius: 5px;
+    font-size: 14px; /* Slightly smaller font */
+    color: #333;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; /* Slightly smaller font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+/* Header and Navbar Styling */
+header {
+    background-color: #282c34;
+    padding: 15px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+header:hover {
+    background-color: #343a40; /* Slightly lighter background on hover */
+}
+
+header nav .navbar {
+    display: flex;
+    justify-content: center;
+}
+
+header nav .navbar a {
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scaling */
+}
+
+header nav .navbar a:hover {
+    background-color: #6c757d;
+    border-radius: 6px;
+    transform: scale(1.05); /* Slightly scale up the link on hover */
+}
+
+/* Main Section Styling */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease; /* Fade-in animation for main section */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main section h2 {
+    margin-top: 0;
+    color: #343a40;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Reduced padding for a shorter form height */
+    margin-bottom: 0; /* Ensure no extra space below the form */
+}
+
+form label {
+    margin-bottom: 5px; /* Reduced margin for labels */
+    font-weight: bold;
+    color: #495057;
+}
+
+form input, form textarea {
+    padding: 8px; /* Reduced padding for input fields */
+    margin-bottom: 10px; /* Reduced margin between fields */
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px; /* Adjusted font size */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #28a745; /* Change border color on focus */
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.3); /* Adjusted shadow effect on focus */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 10px; /* Reduced minimum height for textarea */
+}
+
+form button {
+    padding: 10px 20px; /* Reduced padding for button */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and button size */
+}
+
+form button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #282c34;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+footer:hover {
+    background-color: #343a40; /* Slightly lighter background on hover */
+}

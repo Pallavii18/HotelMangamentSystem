@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* UserHomepage.css */
+
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header is above other content */
+    text-align: center; /* Center text in header */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding-top: 80px; /* Adjust for header height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Partition for sections */
+.partition {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px; /* Adjust width to fit the content */
+    width: 100%;
+    margin-bottom: 40px; /* Space below partition */
+}
+
+/* Food menu and facilities sections */
+.food-menu,
+.facilities {
+    background: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjust width to fit two sections side-by-side */
+}
+
+.food-menu {
+    margin-right: 2%;
+}
+
+.food-menu h3,
+.facilities h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 120px; /* Adjusted width */
+    height: 80px; /* Adjusted height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    max-width: 500px;
+}
+
+.item-details h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.facilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facilities li {
+    padding: 10px 0;
+}
+
+/* Room Types Section */
+#room-types {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the room types section */
+    margin-bottom: 40px; /* Space below room types section */
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    max-width: 1200px; /* Adjust width to fit the content */
+    width: 100%;
+}
+
+.room {
+    background: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1; /* Ensures square shape */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text inside the room */
+    margin-bottom: 20px; /* Space below each room */
+}
+
+.room img {
+    width: 50%; /* Full width of the container */
+    height: 50%; /* Full height of the container */
+    object-fit: cover; /* Ensure image covers the room container */
+    border-radius: 8px;
+}
+
+.room h3 {
+    margin-top: 10px;
+}
+
+.room .price {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
